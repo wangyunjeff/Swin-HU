@@ -1,0 +1,28 @@
+PATH:
+  DATASET: ./data/datasets/synthetic_maternGFSNR10.mat
+  SAVE_DIR: ./runs/logs/
+SYSTEM:
+  DEVICE: cuda
+TRAINING:
+  BATCH: 20
+  BETA: 5000.0
+  COL: 128
+  COSLR_RATE: 0.01
+  DATASET: synthetic_maternGFSNR10
+  DIM: 48
+  EPOCH: 30000
+  GAMMA: 0.05
+  INIT: true
+  L: 228
+  LR: 0.001
+  MODEL_NAME: swin_transformer
+  ORDER_ABD: &id001
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  ORDER_ENDMEM: *id001
+  P: 5
+  PATCH: 4
+  WEIGHT_DECAY_PARAM: 4e-5

@@ -1,0 +1,26 @@
+PATH:
+  DATASET: ./data/datasets/apex_dataset.mat
+  SAVE_DIR: ./runs/logs/
+SYSTEM:
+  DEVICE: cuda
+TRAINING:
+  INIT: True
+  BETA: 5000.0
+  GAMMA: 3e-2
+  COL: 110
+  LR: 9e-3
+  COSLR_RATE: 0.01
+  DATASET: apex
+  MODEL_NAME: cnn_vit
+  DIM: 200
+  EPOCH: 200
+  L: 285
+  ORDER_ABD: &id001
+  - 0
+  - 1
+  - 2
+  - 3
+  ORDER_ENDMEM: *id001
+  P: 4
+  PATCH: 5
+  WEIGHT_DECAY_PARAM: 4.0e-05

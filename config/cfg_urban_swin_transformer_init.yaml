@@ -1,0 +1,27 @@
+PATH:
+  DATASET: ./data/datasets/urban_dataset.mat
+  SAVE_DIR: ./runs/logs/
+SYSTEM:
+  DEVICE: cuda
+  TIME: 20220928-18-20-41
+TRAINING:
+  BETA: 5000.0
+  COL: 307
+  COSLR_RATE: 0.3
+  DATASET: urban
+  DIM: 60
+  EPOCH: 200
+  GAMMA: 0.05
+  INIT: true
+  L: 162
+  LR: 0.006
+  MODEL_NAME: swin_transformer
+  ORDER_ABD: &id001
+  - 0
+  - 1
+  - 2
+  - 3
+  ORDER_ENDMEM: *id001
+  P: 4
+  PATCH: 5
+  WEIGHT_DECAY_PARAM: 4.0e-05
